@@ -1,0 +1,18 @@
+PODS:
+  - PathKit (0.7.0)
+  - Stencil (0.6.0):
+    - PathKit (~> 0.7.0)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - Stencil (~> 0.6)
+  - SwiftyJSON (~> 3.1)
+
+SPEC CHECKSUMS:
+  PathKit: f8260c3e41bf4d552f3603853e32a5b325a176d4
+  Stencil: c665353046bca0279f3503f88293f2eff5fc67a6
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: ffe2e423e11177f6a58ebc157b5aa41a79094914
+
+COCOAPODS: 1.1.0.rc.3

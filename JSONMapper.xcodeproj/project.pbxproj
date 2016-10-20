@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3815D3D99275DC24A4DCBC98 /* Pods_JSONMapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A2FB7138987DE145E6102C /* Pods_JSONMapperTests.framework */; };
+		42C393E93FDD61BD9AC73C29 /* Pods_JSONMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398B8B0D9E7CD0A217BBA161 /* Pods_JSONMapper.framework */; };
+		4C1ED15C1DB7F6FC00E78F23 /* ClassGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1591DB7F6FC00E78F23 /* ClassGenerator.swift */; };
+		4C1ED15D1DB7F6FC00E78F23 /* ClassRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED15A1DB7F6FC00E78F23 /* ClassRenderer.swift */; };
+		4C1ED15E1DB7F6FC00E78F23 /* ClassTemplate.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 4C1ED15B1DB7F6FC00E78F23 /* ClassTemplate.stencil */; };
+		4C1ED1611DB7F77E00E78F23 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1601DB7F77E00E78F23 /* StringExtension.swift */; };
+		4C1ED1641DB7F8B600E78F23 /* PropertyTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1621DB7F8B600E78F23 /* PropertyTypes.swift */; };
+		4C1ED1651DB7F8B600E78F23 /* TemplateTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1631DB7F8B600E78F23 /* TemplateTypes.swift */; };
 		4C8842771DB24840003B7C5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8842761DB24840003B7C5E /* AppDelegate.swift */; };
 		4C8842791DB24840003B7C5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8842781DB24840003B7C5E /* ViewController.swift */; };
 		4C88427B1DB24840003B7C5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C88427A1DB24840003B7C5E /* Assets.xcassets */; };
@@ -25,6 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		087C36C6E9B7284433883261 /* Pods-JSONMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONMapper/Pods-JSONMapper.debug.xcconfig"; sourceTree = "<group>"; };
+		24F28F89038C58713A472CC4 /* Pods-JSONMapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONMapperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONMapperTests/Pods-JSONMapperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		398B8B0D9E7CD0A217BBA161 /* Pods_JSONMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1ED1591DB7F6FC00E78F23 /* ClassGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassGenerator.swift; sourceTree = "<group>"; };
+		4C1ED15A1DB7F6FC00E78F23 /* ClassRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassRenderer.swift; sourceTree = "<group>"; };
+		4C1ED15B1DB7F6FC00E78F23 /* ClassTemplate.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplate.stencil; sourceTree = "<group>"; };
+		4C1ED1601DB7F77E00E78F23 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4C1ED1621DB7F8B600E78F23 /* PropertyTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTypes.swift; sourceTree = "<group>"; };
+		4C1ED1631DB7F8B600E78F23 /* TemplateTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTypes.swift; sourceTree = "<group>"; };
 		4C8842731DB24840003B7C5E /* JSONMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8842761DB24840003B7C5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C8842781DB24840003B7C5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +51,9 @@
 		4C8842841DB24840003B7C5E /* JSONMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8842881DB24840003B7C5E /* JSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperTests.swift; sourceTree = "<group>"; };
 		4C88428A1DB24840003B7C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C470D582A53CCF91841236F1 /* Pods-JSONMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONMapper/Pods-JSONMapper.release.xcconfig"; sourceTree = "<group>"; };
+		E7A2FB7138987DE145E6102C /* Pods_JSONMapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONMapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B4782E481313B878DBE9B1 /* Pods-JSONMapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONMapperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONMapperTests/Pods-JSONMapperTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C393E93FDD61BD9AC73C29 /* Pods_JSONMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,18 +69,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3815D3D99275DC24A4DCBC98 /* Pods_JSONMapperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C1ED1571DB7F6AC00E78F23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C1ED1621DB7F8B600E78F23 /* PropertyTypes.swift */,
+				4C1ED1631DB7F8B600E78F23 /* TemplateTypes.swift */,
+				4C1ED1591DB7F6FC00E78F23 /* ClassGenerator.swift */,
+				4C1ED15A1DB7F6FC00E78F23 /* ClassRenderer.swift */,
+				4C1ED15B1DB7F6FC00E78F23 /* ClassTemplate.stencil */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		4C1ED1581DB7F6C900E78F23 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4C8842781DB24840003B7C5E /* ViewController.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		4C1ED15F1DB7F76000E78F23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C1ED1601DB7F77E00E78F23 /* StringExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		4C88426A1DB24840003B7C5E = {
 			isa = PBXGroup;
 			children = (
 				4C8842751DB24840003B7C5E /* JSONMapper */,
 				4C8842871DB24840003B7C5E /* JSONMapperTests */,
 				4C8842741DB24840003B7C5E /* Products */,
+				E30E9CEE85F637FCE8C02310 /* Pods */,
+				CF2411819591E20DF73737E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +127,10 @@
 		4C8842751DB24840003B7C5E /* JSONMapper */ = {
 			isa = PBXGroup;
 			children = (
+				4C1ED15F1DB7F76000E78F23 /* Extensions */,
+				4C1ED1581DB7F6C900E78F23 /* Scenes */,
+				4C1ED1571DB7F6AC00E78F23 /* Services */,
 				4C8842761DB24840003B7C5E /* AppDelegate.swift */,
-				4C8842781DB24840003B7C5E /* ViewController.swift */,
 				4C88427A1DB24840003B7C5E /* Assets.xcassets */,
 				4C88427C1DB24840003B7C5E /* Main.storyboard */,
 				4C88427F1DB24840003B7C5E /* Info.plist */,
@@ -93,6 +147,26 @@
 			path = JSONMapperTests;
 			sourceTree = "<group>";
 		};
+		CF2411819591E20DF73737E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				398B8B0D9E7CD0A217BBA161 /* Pods_JSONMapper.framework */,
+				E7A2FB7138987DE145E6102C /* Pods_JSONMapperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E30E9CEE85F637FCE8C02310 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				087C36C6E9B7284433883261 /* Pods-JSONMapper.debug.xcconfig */,
+				C470D582A53CCF91841236F1 /* Pods-JSONMapper.release.xcconfig */,
+				24F28F89038C58713A472CC4 /* Pods-JSONMapperTests.debug.xcconfig */,
+				E9B4782E481313B878DBE9B1 /* Pods-JSONMapperTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C88428D1DB24840003B7C5E /* Build configuration list for PBXNativeTarget "JSONMapper" */;
 			buildPhases = (
+				9F080CA699181928CDD5C458 /* [CP] Check Pods Manifest.lock */,
 				4C88426F1DB24840003B7C5E /* Sources */,
 				4C8842701DB24840003B7C5E /* Frameworks */,
 				4C8842711DB24840003B7C5E /* Resources */,
+				11675059C727CAA848148E5C /* [CP] Embed Pods Frameworks */,
+				BAB8ED7DD4C855CF2E2D3827 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -117,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8842901DB24840003B7C5E /* Build configuration list for PBXNativeTarget "JSONMapperTests" */;
 			buildPhases = (
+				18FF59811E7172798DCC6C7C /* [CP] Check Pods Manifest.lock */,
 				4C8842801DB24840003B7C5E /* Sources */,
 				4C8842811DB24840003B7C5E /* Frameworks */,
 				4C8842821DB24840003B7C5E /* Resources */,
+				25B57284734D35C27DACDF97 /* [CP] Embed Pods Frameworks */,
+				3FF91CE485423ED77F3B7C30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +258,7 @@
 			files = (
 				4C88427B1DB24840003B7C5E /* Assets.xcassets in Resources */,
 				4C88427E1DB24840003B7C5E /* Main.storyboard in Resources */,
+				4C1ED15E1DB7F6FC00E78F23 /* ClassTemplate.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,13 +271,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11675059C727CAA848148E5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONMapper/Pods-JSONMapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18FF59811E7172798DCC6C7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		25B57284734D35C27DACDF97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONMapperTests/Pods-JSONMapperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FF91CE485423ED77F3B7C30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONMapperTests/Pods-JSONMapperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F080CA699181928CDD5C458 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB8ED7DD4C855CF2E2D3827 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONMapper/Pods-JSONMapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C88426F1DB24840003B7C5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1ED1641DB7F8B600E78F23 /* PropertyTypes.swift in Sources */,
+				4C1ED1651DB7F8B600E78F23 /* TemplateTypes.swift in Sources */,
 				4C8842791DB24840003B7C5E /* ViewController.swift in Sources */,
 				4C8842771DB24840003B7C5E /* AppDelegate.swift in Sources */,
+				4C1ED1611DB7F77E00E78F23 /* StringExtension.swift in Sources */,
+				4C1ED15C1DB7F6FC00E78F23 /* ClassGenerator.swift in Sources */,
+				4C1ED15D1DB7F6FC00E78F23 /* ClassRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +427,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -270,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -297,6 +477,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -313,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -322,7 +503,9 @@
 		};
 		4C88428E1DB24840003B7C5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087C36C6E9B7284433883261 /* Pods-JSONMapper.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = JSONMapper/Info.plist;
@@ -335,7 +518,9 @@
 		};
 		4C88428F1DB24840003B7C5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C470D582A53CCF91841236F1 /* Pods-JSONMapper.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = JSONMapper/Info.plist;
@@ -348,6 +533,7 @@
 		};
 		4C8842911DB24840003B7C5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F28F89038C58713A472CC4 /* Pods-JSONMapperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -363,6 +549,7 @@
 		};
 		4C8842921DB24840003B7C5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B4782E481313B878DBE9B1 /* Pods-JSONMapperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -395,6 +582,7 @@
 				4C88428F1DB24840003B7C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C8842901DB24840003B7C5E /* Build configuration list for PBXNativeTarget "JSONMapperTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +591,7 @@
 				4C8842921DB24840003B7C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
