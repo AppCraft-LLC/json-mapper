@@ -1,18 +1,32 @@
 PODS:
+  - Fragaria (1.0.2):
+    - Fragaria/unicode (= 1.0.2)
+  - Fragaria/unicode (1.0.2)
   - PathKit (0.7.0)
   - Stencil (0.6.0):
     - PathKit (~> 0.7.0)
   - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
+  - Fragaria (from `Fragaria.podspec.json`)
   - Stencil (~> 0.6)
   - SwiftyJSON (~> 3.1)
 
+EXTERNAL SOURCES:
+  Fragaria:
+    :podspec: Fragaria.podspec.json
+
+CHECKOUT OPTIONS:
+  Fragaria:
+    :commit: 8794cd8867e1d032374525cb54b8d374fd8a5c58
+    :git: https://github.com/bitstadium/Fragaria.git
+
 SPEC CHECKSUMS:
+  Fragaria: 02606519a1f3d87f203929f9e9ebf0290f987372
   PathKit: f8260c3e41bf4d552f3603853e32a5b325a176d4
   Stencil: c665353046bca0279f3503f88293f2eff5fc67a6
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: ffe2e423e11177f6a58ebc157b5aa41a79094914
+PODFILE CHECKSUM: aaef1193564e152bac580be557c95e96f589f740
 
 COCOAPODS: 1.1.0.rc.3

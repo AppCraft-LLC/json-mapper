@@ -1,0 +1,41 @@
+{
+  "name": "Fragaria",
+  "version": "1.0.2",
+  "summary": "Cocoa syntax highlighting text view.",
+  "homepage": "http://www.mugginsoft.com/code/fragaria",
+  "authors": {
+    "Jonathan Mitchell": "jonathan@mugginsoft.com"
+  },
+  "source": {
+    "git": "https://github.com/bitstadium/Fragaria.git",
+    "branch": "develop"
+  },
+  "source_files": [
+    "NS*.{h,m}",
+    "MGS*.{h,m}",
+    "ICU*.{h,m}",
+    "SML*.{h,m}",
+    "FRAFont*.{h,m}",
+    "Fragaria.h"
+  ],
+  "resources": [
+    "Images.xcassets",
+    "SML*.xib",
+    "Syntax Definitions",
+    "SyntaxDefinitions.plist"
+  ],
+  "public_header_files": "*.h",
+  "platforms": {
+    "osx": "10.10"
+  },
+  "libraries": "icucore",
+  "license": "BSD",
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "unicode",
+      "header_dir": "unicode",
+      "source_files": "icu/**/*.h"
+    }
+  ]
+}

@@ -8,12 +8,14 @@
 
 import Cocoa
 import SwiftyJSON
+import Fragaria
 
 class ViewController: NSViewController {
-    @IBOutlet var inputJSONTextView: NSTextView!
+    @IBOutlet weak var editor: MGSFragariaView!
+    @IBOutlet weak var classNameTextField: NSTextField!
     
     @IBAction func generateButtonPressed(_ sender: NSButton) {
-        guard let text = inputJSONTextView.textStorage?.string else { return }
+        let text = editor.string as String
         guard let dataFromString = text.data(using: String.Encoding.utf8, allowLossyConversion: false) else { return }
         let json = JSON(data: dataFromString)
         
@@ -25,29 +27,38 @@ class ViewController: NSViewController {
         
         var classModel: [String: String] = [:]
         
-        ClassGenerator().generateClassForObject(json, className: "testClass", options: options, classModel: &classModel)
+        ClassGenerator().generateClassForObject(json,
+                                                className: classNameTextField.stringValue,
+                                                options: options,
+                                                classModel: &classModel)
         
         var resultString = ""
         for (_, classBody) in classModel {
             resultString = resultString + classBody + "\n\n"
         }
         
-        inputJSONTextView.textStorage?.mutableString.setString(resultString)
+        editor.string = resultString as NSString
+    }
+    
+    @IBAction func clearButtonPressed(_ sender: NSButton) {
+        editor.string = ""
+        classNameTextField.stringValue = "Base"
     }
     
     // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupInputTextView()
-    }
-    
-    // MARK: Helper methods
-    
-    func setupInputTextView() {
-        self.inputJSONTextView.isAutomaticQuoteSubstitutionEnabled = false;
-        self.inputJSONTextView.isAutomaticDashSubstitutionEnabled = false;
-        self.inputJSONTextView.isAutomaticTextReplacementEnabled = false;
+        
+        editor.becomeFirstResponder()
+        
+        editor.isSyntaxColoured = true
+        editor.syntaxDefinitionName = "Javascript"
+        editor.string = "{ \"status\" : 0}"
+        editor.highlightsCurrentLine = true
+        
+        editor.tabWidth = 4
+        editor.indentWithSpaces = true
     }
 }
 
