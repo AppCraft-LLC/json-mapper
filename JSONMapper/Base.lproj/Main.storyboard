@@ -682,18 +682,21 @@
             <objects>
                 <viewController id="BJ4-9a-37z" customClass="MainViewController" customModule="JSONMapper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ZzU-ba-hBL">
-                        <rect key="frame" x="0.0" y="0.0" width="541" height="368"/>
+                        <rect key="frame" x="0.0" y="0.0" width="561" height="368"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <splitView arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-8R-JzI">
-                                <rect key="frame" x="0.0" y="0.0" width="541" height="368"/>
+                                <rect key="frame" x="0.0" y="0.0" width="561" height="368"/>
                                 <subviews>
-                                    <customView fixedFrame="YES" id="OYv-1X-Qd5" customClass="MGSFragariaView">
-                                        <rect key="frame" x="0.0" y="0.0" width="352" height="368"/>
+                                    <customView id="OYv-1X-Qd5" customClass="MGSFragariaView">
+                                        <rect key="frame" x="0.0" y="0.0" width="372" height="368"/>
                                         <autoresizingMask key="autoresizingMask"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="b0l-l5-SMa"/>
+                                        </constraints>
                                     </customView>
                                     <customView id="z9u-e7-2c0">
-                                        <rect key="frame" x="353" y="0.0" width="188" height="368"/>
+                                        <rect key="frame" x="373" y="0.0" width="188" height="368"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G9D-d5-Pch">
@@ -736,6 +739,7 @@
                                         <constraints>
                                             <constraint firstItem="Ci9-93-YfI" firstAttribute="top" secondItem="z9u-e7-2c0" secondAttribute="top" constant="10" id="0XC-Sq-bHg"/>
                                             <constraint firstItem="QMM-5v-7ej" firstAttribute="leading" secondItem="z9u-e7-2c0" secondAttribute="leading" constant="5" id="6mi-26-wSq"/>
+                                            <constraint firstAttribute="width" constant="200" id="CUZ-Rq-ohX"/>
                                             <constraint firstAttribute="trailing" secondItem="wRq-cC-8dh" secondAttribute="trailing" constant="5" id="DK2-5s-EWE"/>
                                             <constraint firstItem="G9D-d5-Pch" firstAttribute="top" secondItem="wRq-cC-8dh" secondAttribute="bottom" constant="5" id="Jv9-S1-Y6A"/>
                                             <constraint firstItem="Ci9-93-YfI" firstAttribute="leading" secondItem="QMM-5v-7ej" secondAttribute="trailing" constant="5" id="LEx-qw-f3S"/>
@@ -748,6 +752,9 @@
                                         </constraints>
                                     </customView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="0zt-Yg-5Yp"/>
+                                </constraints>
                                 <holdingPriorities>
                                     <real value="250"/>
                                     <real value="400"/>
@@ -768,7 +775,7 @@
                 </viewController>
                 <customObject id="qUC-2a-5EK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151.5" y="838"/>
+            <point key="canvasLocation" x="161.5" y="838"/>
         </scene>
     </scenes>
 </document>
