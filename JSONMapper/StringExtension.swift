@@ -18,4 +18,8 @@ extension String {
         result.makeFirstCharUpperCase()
         return result
     }
+    
+    func chomp() -> String {
+       return self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
 }

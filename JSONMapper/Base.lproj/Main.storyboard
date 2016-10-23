@@ -677,10 +677,10 @@
             </objects>
             <point key="canvasLocation" x="151.5" y="293.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="lhb-o4-jzG">
             <objects>
-                <viewController id="BJ4-9a-37z" customClass="ViewController" customModule="JSONMapper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BJ4-9a-37z" customClass="MainViewController" customModule="JSONMapper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ZzU-ba-hBL">
                         <rect key="frame" x="0.0" y="0.0" width="541" height="368"/>
                         <autoresizingMask key="autoresizingMask"/>
