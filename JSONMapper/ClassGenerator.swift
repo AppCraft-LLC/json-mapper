@@ -25,25 +25,31 @@ class ClassGenerator{
         else if let firstObjectPropertiesDictionary = parsedJSONObject[0].dictionary{
             propertiesFromJson = firstObjectPropertiesDictionary
         }
+        
         if(propertiesFromJson != nil){
             classInfo["properties"] = self.generateClassProperties(propertiesFromJson!, options: options, classModel: &classModel)
         }
+        
         let template = options["template"] as? TemplateTypes
-        if let classFile = ClassRenderer().render(classInfo, template: (template ?? .ClassTemplate)){
+        if let classFile = ClassRenderer().render(classInfo, template: (template ?? .OMClassTemplateSwift3)){
             classModel[resultClassName] = classFile
         }
+        
         return resultClassName
     }
     
     /// Generate class info based on selected options
-    fileprivate func prepareClassInfo(_ className: String, options: [String: Any]) -> [String: Any]{
+    private func prepareClassInfo(_ className: String, options: [String: Any]) -> [String: Any]{
         var classInfo: [String: Any] = ["className": className]
+        
         if let showInfoHeader = options["showInfoHeader"] as? Bool{
             classInfo["showInfoHeader"] = showInfoHeader
         }
+        
         if let author = options["author"] as? String{
             classInfo["author"] = author
         }
+        
         if let company = options["company"] as? String{
             classInfo["company"] = company
         }
@@ -55,6 +61,7 @@ class ClassGenerator{
         else{
             date = Date()
         }
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yy"
         classInfo["date"] = dateFormatter.string(from: date)
@@ -64,8 +71,8 @@ class ClassGenerator{
         return classInfo
     }
     
-    ///Generate properties for class
-    fileprivate func generateClassProperties(_ propertiesFromJson: [String: JSON], options: [String: Any], classModel: inout [String: String]) -> Array<[String: String]>{
+    /// Generate properties for class
+    private func generateClassProperties(_ propertiesFromJson: [String: JSON], options: [String: Any], classModel: inout [String: String]) -> Array<[String: String]>{
         var classProperties: Array<[String: String]> = []
         for (key, jsonValue) in propertiesFromJson {
             let name: String = key
@@ -89,8 +96,8 @@ class ClassGenerator{
         return classProperties
     }
     
-    ///Get type for array properties
-    fileprivate func getArrayType(_ jsonValue: JSON, forPropertyName: String, options: [String: Any], classModel: inout [String: String]) -> String{
+    /// Get type for array properties
+    private func getArrayType(_ jsonValue: JSON, forPropertyName: String, options: [String: Any], classModel: inout [String: String]) -> String{
         var arrayTypeStr: String
         let first = jsonValue[0]
         let typeOfFirst = self.checkType(first)
@@ -106,8 +113,8 @@ class ClassGenerator{
         return "[\(arrayTypeStr)]"
     }
     
-    ///Get type of property
-    fileprivate func checkType(_ value: JSON) -> PropertyTypes {
+    /// Get type of property
+    private func checkType(_ value: JSON) -> PropertyTypes {
         if(value.type == .null){
             return .Null
         }
@@ -167,5 +174,4 @@ class ClassGenerator{
         
         return type
     }
-
 }

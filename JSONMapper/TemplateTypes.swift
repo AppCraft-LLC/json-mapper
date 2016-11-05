@@ -11,8 +11,10 @@ import Foundation
 ///Types of available for rendering templates 
 enum TemplateTypes: String{
     case
-    ClassTemplate = "ClassTemplate.stencil",
-    StructTemplate = "StructTemplate.stencil"
+    OMClassTemplateSwift3 = "OMClassSwift3.stencil",
+    OMStructTemplateSwift3 = "OMStructSwift3.stencil",
+    OMClassTemplateSwift2 = "OMClassSwift2.stencil",
+    OMStructTemplateSwift2 = "OMStructSwift2.stencil"
     
-    static let allValues = [ClassTemplate, StructTemplate]
+    static let allValues = [OMClassTemplateSwift3, OMStructTemplateSwift3, OMClassTemplateSwift2, OMStructTemplateSwift2]
 }

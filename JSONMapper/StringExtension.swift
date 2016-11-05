@@ -9,13 +9,13 @@
 import Foundation
 
 extension String {
-    mutating func makeFirstCharUpperCase(){
+    mutating func capitalize(){
         self.replaceSubrange(self.startIndex...self.startIndex, with: String(self[self.startIndex]).capitalized)
     }
     
     func makeResponseClassName(_ className: String) -> String{
         var result = className + "Response"
-        result.makeFirstCharUpperCase()
+        result.capitalize()
         return result
     }
     

@@ -11,7 +11,7 @@
 		42C393E93FDD61BD9AC73C29 /* Pods_JSONMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398B8B0D9E7CD0A217BBA161 /* Pods_JSONMapper.framework */; };
 		4C1ED15C1DB7F6FC00E78F23 /* ClassGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1591DB7F6FC00E78F23 /* ClassGenerator.swift */; };
 		4C1ED15D1DB7F6FC00E78F23 /* ClassRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED15A1DB7F6FC00E78F23 /* ClassRenderer.swift */; };
-		4C1ED15E1DB7F6FC00E78F23 /* ClassTemplate.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 4C1ED15B1DB7F6FC00E78F23 /* ClassTemplate.stencil */; };
+		4C1ED15E1DB7F6FC00E78F23 /* OMClassSwift2.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 4C1ED15B1DB7F6FC00E78F23 /* OMClassSwift2.stencil */; };
 		4C1ED1611DB7F77E00E78F23 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1601DB7F77E00E78F23 /* StringExtension.swift */; };
 		4C1ED1641DB7F8B600E78F23 /* PropertyTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1621DB7F8B600E78F23 /* PropertyTypes.swift */; };
 		4C1ED1651DB7F8B600E78F23 /* TemplateTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1631DB7F8B600E78F23 /* TemplateTypes.swift */; };
@@ -21,6 +21,9 @@
 		4C88427B1DB24840003B7C5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C88427A1DB24840003B7C5E /* Assets.xcassets */; };
 		4C88427E1DB24840003B7C5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C88427C1DB24840003B7C5E /* Main.storyboard */; };
 		4C8842891DB24840003B7C5E /* JSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8842881DB24840003B7C5E /* JSONMapperTests.swift */; };
+		4CA4BDBE1DCDDDE200F91AE8 /* OMStructSwift2.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4BDBD1DCDDDE200F91AE8 /* OMStructSwift2.stencil */; };
+		4CA4BDC01DCDE36F00F91AE8 /* OMClassSwift3.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4BDBF1DCDE36F00F91AE8 /* OMClassSwift3.stencil */; };
+		4CA4BDC21DCDE39C00F91AE8 /* OMStructSwift3.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4BDC11DCDE39C00F91AE8 /* OMStructSwift3.stencil */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		398B8B0D9E7CD0A217BBA161 /* Pods_JSONMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1ED1591DB7F6FC00E78F23 /* ClassGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassGenerator.swift; sourceTree = "<group>"; };
 		4C1ED15A1DB7F6FC00E78F23 /* ClassRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassRenderer.swift; sourceTree = "<group>"; };
-		4C1ED15B1DB7F6FC00E78F23 /* ClassTemplate.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplate.stencil; sourceTree = "<group>"; };
+		4C1ED15B1DB7F6FC00E78F23 /* OMClassSwift2.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OMClassSwift2.stencil; sourceTree = "<group>"; };
 		4C1ED1601DB7F77E00E78F23 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4C1ED1621DB7F8B600E78F23 /* PropertyTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTypes.swift; sourceTree = "<group>"; };
 		4C1ED1631DB7F8B600E78F23 /* TemplateTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTypes.swift; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		4C8842841DB24840003B7C5E /* JSONMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8842881DB24840003B7C5E /* JSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperTests.swift; sourceTree = "<group>"; };
 		4C88428A1DB24840003B7C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA4BDBD1DCDDDE200F91AE8 /* OMStructSwift2.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OMStructSwift2.stencil; sourceTree = "<group>"; };
+		4CA4BDBF1DCDE36F00F91AE8 /* OMClassSwift3.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OMClassSwift3.stencil; sourceTree = "<group>"; };
+		4CA4BDC11DCDE39C00F91AE8 /* OMStructSwift3.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OMStructSwift3.stencil; sourceTree = "<group>"; };
 		C470D582A53CCF91841236F1 /* Pods-JSONMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONMapper/Pods-JSONMapper.release.xcconfig"; sourceTree = "<group>"; };
 		E7A2FB7138987DE145E6102C /* Pods_JSONMapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONMapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B4782E481313B878DBE9B1 /* Pods-JSONMapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONMapperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONMapperTests/Pods-JSONMapperTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +91,6 @@
 				4C1ED1631DB7F8B600E78F23 /* TemplateTypes.swift */,
 				4C1ED1591DB7F6FC00E78F23 /* ClassGenerator.swift */,
 				4C1ED15A1DB7F6FC00E78F23 /* ClassRenderer.swift */,
-				4C1ED15B1DB7F6FC00E78F23 /* ClassTemplate.stencil */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 		4C8842751DB24840003B7C5E /* JSONMapper */ = {
 			isa = PBXGroup;
 			children = (
+				4CA4BDBC1DCDBB5C00F91AE8 /* Templates */,
 				4C1ED15F1DB7F76000E78F23 /* Helpers */,
 				4C1ED1581DB7F6C900E78F23 /* Scenes */,
 				4C1ED1571DB7F6AC00E78F23 /* Services */,
@@ -148,6 +154,17 @@
 				4C88428A1DB24840003B7C5E /* Info.plist */,
 			);
 			path = JSONMapperTests;
+			sourceTree = "<group>";
+		};
+		4CA4BDBC1DCDBB5C00F91AE8 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				4C1ED15B1DB7F6FC00E78F23 /* OMClassSwift2.stencil */,
+				4CA4BDBD1DCDDDE200F91AE8 /* OMStructSwift2.stencil */,
+				4CA4BDBF1DCDE36F00F91AE8 /* OMClassSwift3.stencil */,
+				4CA4BDC11DCDE39C00F91AE8 /* OMStructSwift3.stencil */,
+			);
+			name = Templates;
 			sourceTree = "<group>";
 		};
 		CF2411819591E20DF73737E1 /* Frameworks */ = {
@@ -261,7 +278,10 @@
 			files = (
 				4C88427B1DB24840003B7C5E /* Assets.xcassets in Resources */,
 				4C88427E1DB24840003B7C5E /* Main.storyboard in Resources */,
-				4C1ED15E1DB7F6FC00E78F23 /* ClassTemplate.stencil in Resources */,
+				4CA4BDC01DCDE36F00F91AE8 /* OMClassSwift3.stencil in Resources */,
+				4CA4BDC21DCDE39C00F91AE8 /* OMStructSwift3.stencil in Resources */,
+				4C1ED15E1DB7F6FC00E78F23 /* OMClassSwift2.stencil in Resources */,
+				4CA4BDBE1DCDDDE200F91AE8 /* OMStructSwift2.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

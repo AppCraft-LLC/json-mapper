@@ -17,11 +17,14 @@ class MainViewController: NSViewController {
     
     @IBOutlet weak var editor: MGSFragariaView!
     @IBOutlet weak var classNameTextField: NSTextField!
+    @IBOutlet weak var templateDropDown: NSPopUpButton!
+    @IBOutlet weak var generateButton: NSButton!
     
     @IBAction func generateButtonPressed(_ sender: NSButton) {
         let options: [String: Any] = [
             "rawJSON": editor.string,
             "className": classNameTextField.stringValue,
+            "template": TemplateTypes(rawValue: templateDropDown.selectedItem!.title) ?? .OMStructTemplateSwift3
         ]
         
         let result = presenter.convertJSONToClassDefinitions(options: options)
@@ -38,20 +41,31 @@ class MainViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.setupEditor()
+        self.setupTemplateDropDown()
+        self.setupGenerateButton()
     }
     
-    // MARK: Helper functions
+    // MARK: Help functions
     
     private func setupEditor() {
         editor.string = "{ \"status\" : 0 }"
-        
         editor.becomeFirstResponder()
         editor.isSyntaxColoured = true
         editor.syntaxDefinitionName = "Javascript"
         editor.highlightsCurrentLine = true
         editor.tabWidth = 4
         editor.indentWithSpaces = true
+    }
+    
+    private func setupTemplateDropDown() {
+        templateDropDown.addItems(withTitles: TemplateTypes.allValues.map({ $0.rawValue }))
+        templateDropDown.selectItem(at: 0)
+    }
+    
+    private func setupGenerateButton() {
+        generateButton.keyEquivalent = 	"\r"
     }
 }
 

@@ -1,0 +1,19 @@
+{% if showInfoHeader %}//
+//  User.swift
+//  ISONEX.MOBI
+//
+//  AutoCreated by {{ author }} on {{ date }}.
+//  Copyright © {{ year }} {{ company }}. All rights reserved.
+//{% endif %}
+
+import ObjectMapper
+
+struct {{ className}}: Mappable { {% for property in properties %}
+var {{ property.name }}: {{ property.type }}?{% endfor %}
+
+init?(map: Map){}
+
+mutating func mapping(map: Map) { {% for property in properties %}
+self.{{ property.name }} <- map["{{ property.name }}"]{% endfor %}
+}
+}
