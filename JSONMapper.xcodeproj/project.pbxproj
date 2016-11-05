@@ -200,6 +200,7 @@
 				4C8842711DB24840003B7C5E /* Resources */,
 				11675059C727CAA848148E5C /* [CP] Embed Pods Frameworks */,
 				BAB8ED7DD4C855CF2E2D3827 /* [CP] Copy Pods Resources */,
+				4CCE09951DCE06AB00D1CBC0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -238,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Michael Ovchinnikov";
 				TargetAttributes = {
 					4C8842721DB24840003B7C5E = {
@@ -354,6 +355,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONMapperTests/Pods-JSONMapperTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4CCE09951DCE06AB00D1CBC0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		9F080CA699181928CDD5C458 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

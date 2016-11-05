@@ -9,7 +9,7 @@
 import Foundation
 
 /// Types of class properties
-enum PropertyType: String{
+enum PropertyType: String {
     case
     AnyObject = "ClassName",
     String = "String",
@@ -19,6 +19,6 @@ enum PropertyType: String{
     Double = "Double",
     Array = "Array",
     Null = "AnyObject"
-    
+
     static let allValues = [AnyObject, String, Bool, Int, Float, Double, Array, Null]
 }
