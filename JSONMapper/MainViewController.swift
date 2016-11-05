@@ -24,7 +24,7 @@ class MainViewController: NSViewController {
         let options: [String: Any] = [
             "rawJSON": editor.string,
             "className": classNameTextField.stringValue,
-            "template": TemplateTypes(rawValue: templateDropDown.selectedItem!.title) ?? .OMStructTemplateSwift3
+            "template": TemplateType(rawValue: templateDropDown.selectedItem!.title) ?? .OMStructTemplateSwift3
         ]
         
         let result = presenter.convertJSONToClassDefinitions(options: options)
@@ -60,7 +60,7 @@ class MainViewController: NSViewController {
     }
     
     private func setupTemplateDropDown() {
-        templateDropDown.addItems(withTitles: TemplateTypes.allValues.map({ $0.rawValue }))
+        templateDropDown.addItems(withTitles: TemplateType.allValues.map({ $0.rawValue }))
         templateDropDown.selectItem(at: 0)
     }
     

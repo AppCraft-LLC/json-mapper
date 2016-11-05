@@ -17,7 +17,7 @@ class MainPresenter: NSObject {
         let classNameText = options["className"] as? String ?? "Base"
         
         var classModel: [String: String] = [:]
-        _ = ClassGenerator().generateClassForObject(json,
+        _ = ObjectGenerator().generateClassForObject(json,
                                                     className: classNameText,
                                                     options: options,
                                                     classModel: &classModel)

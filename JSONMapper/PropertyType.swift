@@ -8,8 +8,8 @@
 
 import Foundation
 
-///Types of class properties 
-enum PropertyTypes: String{
+/// Types of class properties
+enum PropertyType: String{
     case
     AnyObject = "ClassName",
     String = "String",

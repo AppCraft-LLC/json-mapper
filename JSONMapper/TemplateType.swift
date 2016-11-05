@@ -9,7 +9,7 @@
 import Foundation
 
 ///Types of available for rendering templates 
-enum TemplateTypes: String{
+enum TemplateType: String{
     case
     OMClassTemplateSwift3 = "OMClassSwift3.stencil",
     OMStructTemplateSwift3 = "OMStructSwift3.stencil",

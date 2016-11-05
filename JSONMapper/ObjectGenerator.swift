@@ -11,7 +11,7 @@ import Stencil
 import SwiftyJSON
 
 ///Generator of classes, based on JSON-responses
-class ClassGenerator{
+class ObjectGenerator{
 
     /// Generate class with specified name and template, keeping all children classes in classModel
     func generateClassForObject(_ parsedJSONObject: JSON, className: String, options: [String: Any], classModel: inout [String: String]) -> String{
@@ -26,12 +26,12 @@ class ClassGenerator{
             propertiesFromJson = firstObjectPropertiesDictionary
         }
         
-        if(propertiesFromJson != nil){
+        if propertiesFromJson != nil {
             classInfo["properties"] = self.generateClassProperties(propertiesFromJson!, options: options, classModel: &classModel)
         }
         
-        let template = options["template"] as? TemplateTypes
-        if let classFile = ClassRenderer().render(classInfo, template: (template ?? .OMClassTemplateSwift3)){
+        let template = options["template"] as? TemplateType
+        if let classFile = ObjectRenderer().render(classInfo, template: (template ?? .OMClassTemplateSwift3)){
             classModel[resultClassName] = classFile
         }
         
@@ -76,7 +76,7 @@ class ClassGenerator{
         var classProperties: Array<[String: String]> = []
         for (key, jsonValue) in propertiesFromJson {
             let name: String = key
-            let type: PropertyTypes = checkType(jsonValue)
+            let type: PropertyType = checkType(jsonValue)
             var property: Dictionary<String, String> = [:]
             property["name"] = name
             if(type == .AnyObject){
@@ -114,12 +114,12 @@ class ClassGenerator{
     }
     
     /// Get type of property
-    private func checkType(_ value: JSON) -> PropertyTypes {
+    private func checkType(_ value: JSON) -> PropertyType {
         if(value.type == .null){
             return .Null
         }
         var js : JSON = value as JSON
-        var type: PropertyTypes = .AnyObject
+        var type: PropertyType = .AnyObject
         
         if let _ = js.string {
             type = .String
