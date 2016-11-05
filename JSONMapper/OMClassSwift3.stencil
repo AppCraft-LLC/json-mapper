@@ -8,12 +8,12 @@
 
 import ObjectMapper
 
-struct {{ className}}: Mappable { {% for property in properties %}
+class {{ className}}: Mappable { {% for property in properties %}
 var {{ property.name }}: {{ property.type }}?{% endfor %}
+          
+required init?(map: Map){}
 
-init?(map: Map){}
-
-mutating func mapping(map: Map) { {% for property in properties %}
+func mapping(map: Map) { {% for property in properties %}
 self.{{ property.name }} <- map["{{ property.name }}"]{% endfor %}
 }
 }
