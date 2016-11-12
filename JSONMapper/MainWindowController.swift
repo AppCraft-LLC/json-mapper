@@ -16,15 +16,29 @@ class MainWindowController: NSWindowController {
         }
     }
 
+    // MARK: Interface builder bindings
+
+    @IBOutlet weak var templatePopUp: NSPopUpButton!
+
     @IBAction func eraseButtonPressed(_ sender: NSButton) {
         guard let mainViewController = self.viewController else { return }
         mainViewController.clearEditor()
     }
 
+    // MARK: View lifecycle
+
     override func windowDidLoad() {
         super.windowDidLoad()
 
         self.window?.titleVisibility = .hidden
+
+        self.setupTemplatePopUp()
     }
 
+    // MARK: Help functions
+
+    private func setupTemplatePopUp() {
+        templatePopUp.addItems(withTitles: TemplateType.allValues.map({ $0.rawValue }))
+        templatePopUp.selectItem(at: 0)
+    }
 }

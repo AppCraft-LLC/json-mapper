@@ -17,14 +17,17 @@ class MainViewController: NSViewController {
 
     @IBOutlet weak var editor: MGSFragariaView!
     @IBOutlet weak var classNameTextField: NSTextField!
-    @IBOutlet weak var templateDropDown: NSPopUpButton!
     @IBOutlet weak var generateButton: NSButton!
 
     @IBAction func generateButtonPressed(_ sender: NSButton) {
+        guard let mainWindow = self.view.window?.windowController as? MainWindowController else { return }
+        guard let templatePopUp = mainWindow.templatePopUp else { return }
+        guard let selectedItem = templatePopUp.selectedItem?.title else { return }
+
         let options: [String: Any] = [
             "rawJSON": editor.string,
             "className": classNameTextField.stringValue,
-            "template": TemplateType(rawValue: templateDropDown.selectedItem!.title) ?? .OMStructTemplateSwift3
+            "template": TemplateType(rawValue: selectedItem) ?? .OMStructTemplateSwift3
         ]
 
         let result = presenter.convertJSONToClassDefinitions(options: options)
@@ -38,7 +41,6 @@ class MainViewController: NSViewController {
         super.viewDidLoad()
 
         self.setupEditor()
-        self.setupTemplateDropDown()
         self.setupGenerateButton()
     }
 
@@ -57,11 +59,6 @@ class MainViewController: NSViewController {
         editor.highlightsCurrentLine = true
         editor.tabWidth = 4
         editor.indentWithSpaces = true
-    }
-
-    private func setupTemplateDropDown() {
-        templateDropDown.addItems(withTitles: TemplateType.allValues.map({ $0.rawValue }))
-        templateDropDown.selectItem(at: 0)
     }
 
     private func setupGenerateButton() {
