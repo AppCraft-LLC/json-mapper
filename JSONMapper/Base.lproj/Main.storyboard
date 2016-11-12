@@ -728,33 +728,24 @@
             <objects>
                 <viewController id="BJ4-9a-37z" customClass="MainViewController" customModule="JSONMapper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ZzU-ba-hBL">
-                        <rect key="frame" x="0.0" y="0.0" width="561" height="368"/>
+                        <rect key="frame" x="0.0" y="0.0" width="649" height="368"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <splitView arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-8R-JzI">
-                                <rect key="frame" x="0.0" y="0.0" width="561" height="368"/>
+                                <rect key="frame" x="0.0" y="0.0" width="649" height="368"/>
                                 <subviews>
                                     <customView id="OYv-1X-Qd5" customClass="MGSFragariaView">
-                                        <rect key="frame" x="0.0" y="0.0" width="372" height="368"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="368"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="324" id="QiL-yr-jr8"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="b0l-l5-SMa"/>
                                         </constraints>
                                     </customView>
                                     <customView id="z9u-e7-2c0">
-                                        <rect key="frame" x="373" y="0.0" width="188" height="368"/>
+                                        <rect key="frame" x="332" y="0.0" width="317" height="368"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
-                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G9D-d5-Pch">
-                                                <rect key="frame" x="-1" y="3" width="190" height="32"/>
-                                                <buttonCell key="cell" type="push" title="Generate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oCP-Zc-2pe">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="generateButtonPressed:" target="BJ4-9a-37z" id="7oA-3v-kbV"/>
-                                                </connections>
-                                            </button>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QMM-5v-7ej">
                                                 <rect key="frame" x="3" y="343" width="55" height="11"/>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Class name" id="Ter-01-9xV">
@@ -764,29 +755,33 @@
                                                 </textFieldCell>
                                             </textField>
                                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ci9-93-YfI">
-                                                <rect key="frame" x="61" y="339" width="122" height="19"/>
+                                                <rect key="frame" x="61" y="339" width="251" height="19"/>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="Status" drawsBackground="YES" id="Chf-55-vQF">
                                                     <font key="font" metaFont="smallSystem"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="hZY-0c-gOL" customClass="MGSFragariaView">
+                                                <rect key="frame" x="0.0" y="0.0" width="317" height="329"/>
+                                            </customView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Ci9-93-YfI" firstAttribute="top" secondItem="z9u-e7-2c0" secondAttribute="top" constant="10" id="0XC-Sq-bHg"/>
                                             <constraint firstItem="QMM-5v-7ej" firstAttribute="leading" secondItem="z9u-e7-2c0" secondAttribute="leading" constant="5" id="6mi-26-wSq"/>
-                                            <constraint firstAttribute="width" constant="200" id="CUZ-Rq-ohX"/>
+                                            <constraint firstAttribute="trailing" secondItem="hZY-0c-gOL" secondAttribute="trailing" id="KCy-Li-N8h"/>
+                                            <constraint firstItem="hZY-0c-gOL" firstAttribute="leading" secondItem="z9u-e7-2c0" secondAttribute="leading" id="L90-qz-CM0"/>
                                             <constraint firstItem="Ci9-93-YfI" firstAttribute="leading" secondItem="QMM-5v-7ej" secondAttribute="trailing" constant="5" id="LEx-qw-f3S"/>
                                             <constraint firstAttribute="trailing" secondItem="Ci9-93-YfI" secondAttribute="trailing" constant="5" id="NpT-RJ-5TE"/>
-                                            <constraint firstItem="G9D-d5-Pch" firstAttribute="leading" secondItem="z9u-e7-2c0" secondAttribute="leading" constant="5" id="bzO-R3-RBt"/>
-                                            <constraint firstAttribute="trailing" secondItem="G9D-d5-Pch" secondAttribute="trailing" constant="5" id="efy-ci-wOs"/>
-                                            <constraint firstAttribute="bottom" secondItem="G9D-d5-Pch" secondAttribute="bottom" constant="10" id="fcs-Im-4bA"/>
+                                            <constraint firstAttribute="bottom" secondItem="hZY-0c-gOL" secondAttribute="bottom" id="VJ2-XX-23K"/>
                                             <constraint firstItem="QMM-5v-7ej" firstAttribute="centerY" secondItem="Ci9-93-YfI" secondAttribute="centerY" id="gW9-co-7Lu"/>
+                                            <constraint firstItem="hZY-0c-gOL" firstAttribute="top" secondItem="Ci9-93-YfI" secondAttribute="bottom" constant="10" id="oAd-WQ-2Sh"/>
                                         </constraints>
                                     </customView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="0zt-Yg-5Yp"/>
+                                    <constraint firstItem="hZY-0c-gOL" firstAttribute="width" secondItem="OYv-1X-Qd5" secondAttribute="width" id="fpr-1w-mSn"/>
                                 </constraints>
                                 <holdingPriorities>
                                     <real value="250"/>
@@ -804,12 +799,12 @@
                     <connections>
                         <outlet property="classNameTextField" destination="Ci9-93-YfI" id="L9d-Tg-TTX"/>
                         <outlet property="editor" destination="OYv-1X-Qd5" id="9c5-en-dYj"/>
-                        <outlet property="generateButton" destination="G9D-d5-Pch" id="zYw-0V-ktw"/>
+                        <outlet property="resultView" destination="hZY-0c-gOL" id="PSE-Y5-Usk"/>
                     </connections>
                 </viewController>
                 <customObject id="qUC-2a-5EK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161.5" y="838"/>
+            <point key="canvasLocation" x="147" y="813"/>
         </scene>
     </scenes>
     <resources>

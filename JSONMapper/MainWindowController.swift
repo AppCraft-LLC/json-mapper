@@ -9,7 +9,6 @@
 import Cocoa
 
 class MainWindowController: NSWindowController {
-
     var viewController: MainViewController? {
         get {
             return 	self.window?.contentViewController as? MainViewController
@@ -31,7 +30,7 @@ class MainWindowController: NSWindowController {
         super.windowDidLoad()
 
         self.window?.titleVisibility = .hidden
-
+        templatePopUp.menu?.delegate = self
         self.setupTemplatePopUp()
     }
 
@@ -40,5 +39,16 @@ class MainWindowController: NSWindowController {
     private func setupTemplatePopUp() {
         templatePopUp.addItems(withTitles: TemplateType.allValues.map({ $0.rawValue }))
         templatePopUp.selectItem(at: 0)
+    }
+}
+
+// MARK: - NSMenuDelegate
+
+extension MainWindowController: NSMenuDelegate {
+    func menuDidClose(_ menu: NSMenu) {
+        if menu == self.templatePopUp.menu {
+            guard let mainViewController = self.viewController else { return }
+            mainViewController.performJSONToObjectConversion()
+        }
     }
 }

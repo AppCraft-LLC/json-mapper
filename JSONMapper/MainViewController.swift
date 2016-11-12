@@ -11,15 +11,33 @@ import SwiftyJSON
 import Fragaria
 
 class MainViewController: NSViewController {
-    private let presenter = MainPresenter()
+    fileprivate let presenter = MainPresenter()
 
     // MARK: Interface buider bindings
 
     @IBOutlet weak var editor: MGSFragariaView!
     @IBOutlet weak var classNameTextField: NSTextField!
-    @IBOutlet weak var generateButton: NSButton!
+    @IBOutlet weak var resultView: MGSFragariaView!
 
-    @IBAction func generateButtonPressed(_ sender: NSButton) {
+    // MARK: View lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        classNameTextField.delegate = self
+
+        self.setupEditor()
+        self.setupResultView()
+    }
+
+    // MARK: Help functions
+
+    func clearEditor() {
+        editor.string = ""
+        classNameTextField.stringValue = "Base"
+    }
+
+    func performJSONToObjectConversion() {
         guard let mainWindow = self.view.window?.windowController as? MainWindowController else { return }
         guard let templatePopUp = mainWindow.templatePopUp else { return }
         guard let selectedItem = templatePopUp.selectedItem?.title else { return }
@@ -32,23 +50,7 @@ class MainViewController: NSViewController {
 
         let result = presenter.convertJSONToClassDefinitions(options: options)
 
-        editor.string = result as NSString
-    }
-
-    // MARK: View lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        self.setupEditor()
-        self.setupGenerateButton()
-    }
-
-    // MARK: Help functions
-
-    func clearEditor() {
-        editor.string = ""
-        classNameTextField.stringValue = "Base"
+        resultView.string = result as NSString
     }
 
     private func setupEditor() {
@@ -59,9 +61,29 @@ class MainViewController: NSViewController {
         editor.highlightsCurrentLine = true
         editor.tabWidth = 4
         editor.indentWithSpaces = true
+        editor.textViewDelegate = self
     }
 
-    private func setupGenerateButton() {
-        generateButton.keyEquivalent = 	"\r"
+    private func setupResultView() {
+        resultView.isSyntaxColoured = editor.isSyntaxColoured
+        resultView.tabWidth = editor.tabWidth
+        resultView.indentWithSpaces = editor.indentWithSpaces
+        resultView.syntaxDefinitionName = editor.syntaxDefinitionName
+    }
+}
+
+// MARK: - MGSFragariaTextViewDelegate
+
+extension MainViewController: MGSFragariaTextViewDelegate, MGSDragOperationDelegate {
+    func textDidChange(_ notification: Notification) {
+        self.performJSONToObjectConversion()
+    }
+}
+
+// MARK: - NSTextFieldDelegate
+
+extension MainViewController: NSTextFieldDelegate {
+    override func controlTextDidChange(_ obj: Notification) {
+        self.performJSONToObjectConversion()
     }
 }
