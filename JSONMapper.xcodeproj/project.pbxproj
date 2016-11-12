@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3815D3D99275DC24A4DCBC98 /* Pods_JSONMapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A2FB7138987DE145E6102C /* Pods_JSONMapperTests.framework */; };
 		42C393E93FDD61BD9AC73C29 /* Pods_JSONMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398B8B0D9E7CD0A217BBA161 /* Pods_JSONMapper.framework */; };
+		4C099A291DD6E29B00A82478 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C099A281DD6E29B00A82478 /* MainWindowController.swift */; };
 		4C1ED15C1DB7F6FC00E78F23 /* ObjectGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED1591DB7F6FC00E78F23 /* ObjectGenerator.swift */; };
 		4C1ED15D1DB7F6FC00E78F23 /* ObjectRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1ED15A1DB7F6FC00E78F23 /* ObjectRenderer.swift */; };
 		4C1ED15E1DB7F6FC00E78F23 /* OMClassSwift2.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 4C1ED15B1DB7F6FC00E78F23 /* OMClassSwift2.stencil */; };
@@ -40,6 +41,7 @@
 		087C36C6E9B7284433883261 /* Pods-JSONMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONMapper/Pods-JSONMapper.debug.xcconfig"; sourceTree = "<group>"; };
 		24F28F89038C58713A472CC4 /* Pods-JSONMapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONMapperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONMapperTests/Pods-JSONMapperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		398B8B0D9E7CD0A217BBA161 /* Pods_JSONMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C099A281DD6E29B00A82478 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		4C1ED1591DB7F6FC00E78F23 /* ObjectGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectGenerator.swift; sourceTree = "<group>"; };
 		4C1ED15A1DB7F6FC00E78F23 /* ObjectRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectRenderer.swift; sourceTree = "<group>"; };
 		4C1ED15B1DB7F6FC00E78F23 /* OMClassSwift2.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OMClassSwift2.stencil; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				4C8842781DB24840003B7C5E /* MainViewController.swift */,
 				4C6F97081DBD3DB900D3B586 /* MainPresenter.swift */,
+				4C099A281DD6E29B00A82478 /* MainWindowController.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				4C1ED1611DB7F77E00E78F23 /* StringExtension.swift in Sources */,
 				4C1ED15C1DB7F6FC00E78F23 /* ObjectGenerator.swift in Sources */,
 				4C1ED15D1DB7F6FC00E78F23 /* ObjectRenderer.swift in Sources */,
+				4C099A291DD6E29B00A82478 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,10 @@ We have used cool [SwiftyJSONAccelerator](https://github.com/insanoid/SwiftyJSON
 
 Project was developed by Andrey Romanov and Michail Ovchinnikov.
 
+### Artwork
+
+* Rubber icon by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com) is licensed by [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+
 ## License
 
 Project is distributed under MIT License.

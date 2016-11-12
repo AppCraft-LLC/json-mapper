@@ -32,11 +32,6 @@ class MainViewController: NSViewController {
         editor.string = result as NSString
     }
 
-    @IBAction func clearButtonPressed(_ sender: NSButton) {
-        editor.string = ""
-        classNameTextField.stringValue = "Base"
-    }
-
     // MARK: View lifecycle
 
     override func viewDidLoad() {
@@ -48,6 +43,11 @@ class MainViewController: NSViewController {
     }
 
     // MARK: Help functions
+
+    func clearEditor() {
+        editor.string = ""
+        classNameTextField.stringValue = "Base"
+    }
 
     private func setupEditor() {
         editor.string = "{ \"status\" : 0 }"
